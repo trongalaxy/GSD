@@ -13,7 +13,7 @@ fully decentralized self-stabilizing dollar.
 simple [dashboard](https://gsd.trongalaxy.finance) for interacting with the døllar protocol.
 
 ## contracts
-### mainnet
+### Huobi ECO Chain mainnet
 - `deploy at 2021-1-12 20:00:00 UTC+8` **DAO**
 - `deploy at 2021-1-12 20:00:00 UTC+8` **GSD**
 - `deploy at 2021-1-12 20:00:00 UTC+8` **Oracle**
