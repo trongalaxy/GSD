@@ -43,7 +43,7 @@ contract Dollar is IDollar, MinterRole, ERC20Detailed, Permittable, ERC20Burnabl
             _approve(
                 sender,
                 _msgSender(),
-                allowance(sender, _msgSender()).sub(amount, "HSD: transfer amount exceeds allowance"));
+                allowance(sender, _msgSender()).sub(amount, "GSD: transfer amount exceeds allowance"));
         }
         return true;
     }

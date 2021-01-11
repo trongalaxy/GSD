@@ -34,8 +34,8 @@ contract Implementation is State, Bonding, Market, Regulator, Govern {
         uint256 epochPeriod = Constants.getEpochPeriod();
         _state.epoch.current = 0;
 
-        //for test
-        _state.epoch.start = block.timestamp;
+        //2021-01-12 20:00:00 UTC+8
+        _state.epoch.start = 1610452800;
         //_state.epoch.start = (block.timestamp / epochPeriod + 1) * epochPeriod; // Round to the next UTC-0
 
         _state.epoch.period = epochPeriod;

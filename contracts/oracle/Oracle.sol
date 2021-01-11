@@ -58,7 +58,7 @@ contract Oracle is IOracle {
         Require.that(
             _index == 0 || _dollar == token1,
             FILE,
-            "HSD not found"
+            "GSD not found"
         );
     }
 
