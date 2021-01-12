@@ -40,8 +40,8 @@ contract Implementation is State, Bonding, Market, Regulator, Govern {
 
         _state.epoch.period = epochPeriod;
 
-        //give 1000gsd to owner
-        mintToAccount(msg.sender, 1e21);
+        //give 10000 gsd to owner
+        mintToAccount(msg.sender, 1e22);
     }
 
     function advance() external incentivized {
