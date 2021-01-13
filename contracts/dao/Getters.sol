@@ -92,7 +92,7 @@ contract Getters is State {
     }
 
     function totalNet() public view returns (uint256) {
-        return dollar().totalSupply().sub(totalDebt()).sub(9000 * 1e18);
+        return dollar().totalSupply().sub(totalDebt());
     }
 
     /**

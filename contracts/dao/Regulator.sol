@@ -28,7 +28,7 @@ contract Regulator is Comptroller {
     event SupplyNeutral(uint256 indexed epoch);
 
     function step() internal {
-        Decimal.D256 memory price = oracleCapture();
+        Decimal.D256 memory price = oracleCapture().div(100);
 
         if (price.greaterThan(Decimal.one())) {
             growSupply(price);

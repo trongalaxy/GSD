@@ -31,17 +31,17 @@ contract Implementation is State, Bonding, Market, Regulator, Govern {
     event Incentivization(address indexed account, uint256 amount);
 
     function initialize() initializer public {
-        uint256 epochPeriod = Constants.getEpochPeriod();
-        _state.epoch.current = 0;
+        //uint256 epochPeriod = Constants.getEpochPeriod();
+        //_state.epoch.current = 0;
 
         //2021-01-12 20:00:00 UTC+8
-        _state.epoch.start = 1610452800;
+        //_state.epoch.start = 1610452800;
         //_state.epoch.start = (block.timestamp / epochPeriod + 1) * epochPeriod; // Round to the next UTC-0
 
-        _state.epoch.period = epochPeriod;
+        //_state.epoch.period = epochPeriod;
 
         //give 10000 gsd to owner
-        mintToAccount(msg.sender, 1e22);
+        //mintToAccount(msg.sender, 1e22);
     }
 
     function advance() external incentivized {
